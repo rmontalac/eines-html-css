@@ -1,0 +1,8 @@
+body {
+  background: linear-gradient(to bottom, rgb(92, 48, 48), white);
+  min-height: 100vh;
+  margin: 0;
+  h1 {
+    margin-top: 0;
+  }
+}
