@@ -90,4 +90,70 @@ main {
 .saltar:focus {
   left: 1rem;
   top: 1rem;
+  background: white;
+  color: var(--granate);
+  padding: 0.5rem 1rem;
+}
+
+.recetas {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.recetas li {
+  flex: 1 1 300px;
+}
+
+.recetas img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recetas a {
+  color: var(--texto);
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+
+}
+
+main img {
+  max-width: min(600px, 100%);
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+main h1 {
+  border-bottom: 3px solid var(--granate);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  min-width: 200px;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+main a {
+  color: var(--granate);
+}
+
+main a:hover,
+main a:focus {
+  text-decoration: none;
 }
