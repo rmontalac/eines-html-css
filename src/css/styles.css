@@ -1,8 +1,94 @@
+@import "npm:@fontsource/playfair-display/700.css";
+:root{
+  --granate: #5e2b2b;
+  --crema: #f7f1ec;
+  --texto: #2b1a1a;
+  --rosa: #ead3cb;
+}
+
 body {
-  background: linear-gradient(to bottom, rgb(92, 48, 48), white);
+  background: var(--crema);
+  color: var(--texto);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
   min-height: 100vh;
   margin: 0;
   h1 {
     margin-top: 0;
+    font-family: "Playfair Display",serif;
+    color: var(--granate)
   }
+}
+
+header {
+  background: var(--granate);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  margin:
+}
+
+header p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.80rem;
+  color: white;
+  margin: 0;
+
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header a {
+  color: white;
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+header a:hover,
+  a:focus {
+    background: var(--rosa);
+    color: var(--granate);
+  }
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  background: url("../img/portada.png") right center / cover;
+  padding: 6rem 2rem;
+}
+
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  border-bottom: 3px solid var(--granate);
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.saltar {
+  position: absolute;
+  left: -9999px;
+}
+.saltar:focus {
+  left: 1rem;
+  top: 1rem;
 }
