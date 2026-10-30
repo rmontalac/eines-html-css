@@ -157,3 +157,13 @@ main a:hover,
 main a:focus {
   text-decoration: none;
 }
+
+button {
+  background: var(--granate);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
